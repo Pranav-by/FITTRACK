@@ -3,7 +3,7 @@
   "builds": [
     {
       "src": "gms-frontend/package.json",
-      "use": "@vercel/next"
+      "use": "@vercel/static-build"
     },
     {
       "src": "index.js",
