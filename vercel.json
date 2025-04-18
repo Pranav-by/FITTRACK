@@ -1,0 +1,23 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "gms-frontend/package.json",
+      "use": "@vercel/react"
+    },
+    {
+      "src": "index.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "/gms-frontend/$1"
+    },
+    {
+      "src": "/api/(.*)",
+      "dest": "/index.js"
+    }
+  ]
+}
